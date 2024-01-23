@@ -1,0 +1,93 @@
+.photo {
+    width: 160px;
+    height: 160px;
+    background-image: url("https://startbootstrap.github.io/startbootstrap-resume/assets/img/profile.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    border: 8px solid #CA7D60;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+ul {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: #E1B6A5;
+    font-size: 17px;
+}
+
+.ul-second {
+    display: none;
+}
+
+.burger:hover .ul-second {
+    display: block;
+}
+
+.main-all {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5%;
+    gap: 50px;
+    padding-top: 150px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+    transition: background-color 0.3s ease;
+    background-color: #495057;
+}
+
+.social-icon:hover {
+    background-color: orange;
+}
+
+@media only screen and (max-width: 1000px) {
+    .navbar-first {
+        display: none;
+    }
+
+    .custom-font,
+    .clarence {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .navbar-second {
+        display: none;
+    }
+
+    .custom-font,
+    .clarence {
+        font-size: 50px;
+    }
+
+    body {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }
+}
